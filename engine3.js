@@ -9,8 +9,6 @@ function rpsls(pl1, pl2) {
             {
                 if (pl2 == "lizard" || pl2 == "scissors") {
                     return pl1Won;
-                } else {
-                    return pl2Won;
                 }
             }
             break;
@@ -18,8 +16,6 @@ function rpsls(pl1, pl2) {
             {
                 if (pl2 == "Rock" || pl2 == "Spock") {
                     return pl1Won;
-                } else {
-                    return pl2Won;
                 }
             }
             break;
@@ -27,8 +23,6 @@ function rpsls(pl1, pl2) {
             {
                 if (pl2 == "paper" || pl2 == "lizard") {
                     return pl1Won;
-                } else {
-                    return pl2Won;
                 }
             }
             break;
@@ -36,11 +30,11 @@ function rpsls(pl1, pl2) {
             {
                 if (pl2 == "scissors" || pl2 == "Rock") {
                     return pl1Won;
-                } else {
-                    return pl2Won;
                 }
             }
             break;
+        default:
+            return pl2Won;
     }
 }
 
