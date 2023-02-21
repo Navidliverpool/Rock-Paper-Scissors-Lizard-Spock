@@ -8,12 +8,12 @@ function rpsls(pl1, pl2) {
         case (pl1 == "rock"):
             {
                 if (pl2 == "lizard" || pl2 == "scissors") {
+                    console.log("inja")
                     return pl1Won;
                 } else {
                     return pl2Won;
                 }
             }
-            break;
         case (pl1 == "paper"):
             {
                 if (pl2 == "Rock" || pl2 == "Spock") {
@@ -22,7 +22,6 @@ function rpsls(pl1, pl2) {
                     return pl2Won;
                 }
             }
-            break;
         case (pl1 == "scissors"):
             {
                 if (pl2 == "paper" || pl2 == "lizard") {
@@ -31,7 +30,6 @@ function rpsls(pl1, pl2) {
                     return pl2Won;
                 }
             }
-            break;
         case (pl1 == "spock"):
             {
                 if (pl2 == "scissors" || pl2 == "Rock") {
@@ -40,7 +38,6 @@ function rpsls(pl1, pl2) {
                     return pl2Won;
                 }
             }
-            break;
     }
 }
 
